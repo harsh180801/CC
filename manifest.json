@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "CC Extension",
+    "version": "1.0",
+    "description": "An extension which will convert your currency for you.",
+    "icons": {
+        "128": "icon-128.png",
+        "48": "icon-48.png",
+        "16": "icon-16.png"
+    },
+
+    "browser_action": {
+        "default_icon": "icon-16.png",
+        "default_popup": "popup.html"
+    },
+
+    "background" : {
+        "scripts": ["eventPage.js"],
+        "persistent": false
+    },
+
+    "permissions": [
+        "tabs",
+        "contextMenus",
+        "clipboardRead"
+    ]
+
+}
